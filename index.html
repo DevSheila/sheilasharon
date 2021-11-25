@@ -10,6 +10,7 @@
     <!-- custom -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/hamburger.css">
 
     <link rel="stylesheet" href="css/background.css">
 
@@ -20,13 +21,13 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/all.min.css">
 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
 
 
  
@@ -38,30 +39,37 @@
     <section id="header nav-section">
         <nav class="navbar navbar-expand-md  sticky-top" id="nav-main">
             <a class="navbar-brand" href="#">Sheila Sharon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <i class="fas fa-bars"></i> -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                
               <span class="navbar-toggler-icon"></span>
-            </button>   
-            <div class="collapse navbar-collapse" id="navbarNav">
+            </button>    -->
+
+           
+            <button class="navbar-toggler first-button" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent9"
+            aria-controls="navbarToggleExternalContent9" aria-expanded="true"
+            aria-label="Toggle navigation">
+            <div class="animated-icon1"><span></span><span></span><span></span></div>
+          </button>
+
+           
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent9">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item  ">
                   <a class="nav-link active" href="#about">About </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#services-section">Services</a>
+                  <a class="nav-link" href="#services-section">Skills</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="#blog">Blog</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
@@ -69,6 +77,7 @@
               </ul>
             </div>
           </nav>
+         
     
     </section>
     <!-- ---------------------------------------------- END OF NAVBAR-------------------------------------------- -->
@@ -91,8 +100,35 @@
                 I love creating stuff and solving problems and this is probably the very essence of programming.I see programming as a way to leverage my creativity into making experiences that people would enjoy</p>
             <p class="  text-muted ">
                 Apart from being a software developer, I enjoy most of my time being indoors.I love exploring new music,reading interesting articles and books following a number of sci-fi and fantasy genre movies and television show. When forced outdoors.I enjoy swmming,hiking, bowling, and go carting.</p>
+                  <!-- <a href="" class="btn btn-outline-secondary  text-uppercase download-btn">Download CV  <span><i class="fa fa-download" aria-hidden="true"></i></span></a> -->
         
-              <a href="menu.html" class="btn btn-outline-secondary  text-uppercase download-btn">Download CV  <span><i class="fa fa-download" aria-hidden="true"></i></span></a>
+                <div class="about-icons">
+                  <div class="container">
+                    <div class="row" id="contact">
+                      <div class="col-lg-3 col-md-3 col-6">
+                        <a href="https://github.com/DevSheila/sheilasharon"><i class="fab fa-github "  style="font-size: 1.5rem;"></i> Github</a>
+
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-6">
+                  <a href="https://www.linkedin.com/in/sheila-wambui-3214b81b2/" target="_blank"><i class="fab fa-linkedin" style="font-size: 1.5rem;"></i> LinkedIn</a>
+                        
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-6">
+                  <a href="mailto:sheilasharon10@gmail@gmail.com" target="_blank"><i class="fa fa-envelope " aria-hidden="true" style="font-size: 1.5rem;"></i> Email</a>
+                        
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-6">
+                  <a href="files/sheilaResume (1).pdf" target="_blank"><i class="fa fa-download "  style="font-size: 1.5rem;"></i> Resume</a>
+                        
+                      </div>
+                    
+                    </div>
+                  </div>
+                  
+                  
+
+                  
+                </div>
 
     
             </div>
@@ -113,48 +149,51 @@
 
     
     <!-- ----------------------------------------------SERVICES SECTION--------------------------------------------- -->
-    <section class="ftco-section ftco-services p-5" id="services-section">
+    <section class="ftco-section ftco-services p-5" id="services-section" data-aos="fade-up"  data-aos-duration="1000">
     	<div class="container">
     		<div class="row justify-content-center mb-1 pb-1s">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4 text-uppercase">Services</h2>
+            <h2 class="mb-4 text-uppercase">Skills</h2>
           </div>
         </div>
     		<div class="row">
           <div class="col-md-4 ftco-animate">
             <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-5" data-aos="slide-right"  data-aos-duration="1000">
                 <span class="services-icon"><i class="fa fa-palette"></i></span>
               </div>
               <div class="media-body">
                
                 <h3 class="heading">Design</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae perspiciatis quae facilis animi.</p>
+                <p> I am well versed with figma and Adobe</p>
               </div>
             </div>      
           </div>
           <div class="col-md-4 ftco-animate">
             <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-5" data-aos="slide-right"  data-aos-duration="1000">
                 <span class="services-icon"><i class="fas fa-file-code"></i></span>
                
               </div>
               <div class="media-body">
                 <h3 class="heading">Web Development</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae perspiciatis quae facilis animi.</p>
+                <p>I am a full stack web developer. Various web development languages ,frameworks,tools and libraries i am well versed with include:HTML, CSS, Bootstrap, Vanilla JS, Jquery, Angular, Node JS, PHP, Laravel.</p>
+                <p> Common databases i have used to support my web apps are: MongoDB, Mysql, Firebase, postgreSQL, Heroku </p>
                
               </div>
             </div>      
           </div>
           <div class="col-md-4 ftco-animate">
             <div class="media d-block text-center block-6 services">
-              <div class="icon d-flex justify-content-center align-items-center mb-5"><span class="flaticon-pizza-1">
+              <div class="icon d-flex justify-content-center align-items-center mb-5" data-aos="slide-right"  data-aos-duration="1000"><span class="flaticon-pizza-1">
                 <span class="services-icon"><i class="fab fa-android"></i></span>
 
               </span></div>
               <div class="media-body">
-                <h3 class="heading">Android Development</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut beatae perspiciatis quae facilis animi.</p>
+                <h3 class="heading">Mobile Development</h3>
+                <p> I am a full stack mobile developer.I have created created mobile apps with well designed and developed front end and robust backend that almost always inclueds robust APIs
+                  Various languages andtools  mobile development tools i amwelll versed with include:android, Java, Java Spark, Kotlin, Figma, Firebase, Firestore, postgreSQL
+                </p>
                
               </div>
             </div>    
@@ -170,7 +209,7 @@
     <!-- ----------------------------------------------EDUCATION SECTION---------------------------------------------- -->
 
 
-    <section class="ftco-section education-section p-5" id="education">
+    <section class="ftco-section education-section p-5" data-aos="fade-up"  data-aos-duration="1000" id="education">
    <div class="container">
      <h2 class="text-center">EDUCATION</h2>
     <div class="timeline">
@@ -226,257 +265,173 @@
     </section>
 
     <!-- ----------------------------------------------END OF EDUCATION  SECTION------------------------------------- -->
-    <!-- --------------------------------------------SKILLS SECTION---------------------------------------- -->
-    <section id="skills" class="skills-section" style="background-color: black !important;">
-      <h2 class="text-uppercase text-center text-light">Skills</h2>
-     
-      <div class="container text-white">
-    
-          <div class="row text-center text-white justify-content-center">
-               <h5  class='col-12 mx-auto'>WEB</h5>
-             
-                    <div class="col-6 mx-auto">
-                        <div class="row jusify-content-center">
-                         
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                                <img class="mt-3 mb-5" src="img/html.png" alt="html" width="80" height="80">
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                                <img class="mt-3 mb-5" src="img/css.png" alt="css" width="80" height="80" >
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                                <img class="mt-3 mb-5" src="img/js.png" alt="javascript" width="80" height="80">
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                                <img class="mt-3 mb-5" src="img/bootstrap.png" alt="bootstrap" width="80" height="80">
-                            </div>
-                        </div>
-                  </div>
-                  <div class="col-6 mx-auto">
-                    <div class="row jusify-content-center">
-                          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                            <img class="mt-3 mb-5" src="img/jquery.png" alt="jquery" width="80" height="80">
-                        </div>
-                          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                            <img class="mt-3 mb-5" src="img/php.png" alt="php" width="80" height="80">
-                        </div>
-                          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                              <img class="mt-3 mb-5" src="img/angular.png" alt="angular" width="80" height="80">
-                          </div>
-                          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                            <img class="mt-3 mb-5" src="img/node.png" alt="nodeJs" width="80" height="80">
-                        </div>
-                      </div>
-                  </div>
-          </div>
 
-
-          <div class="row text-center text-white justify-content-center">
-              <div class="col-6 mx-auto">
-                <h5 class="col-12 text-center"> Java/Android</h5>
-
-                <div class="row  justify-content-center">
-                  
-                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                      <img class="mt-3 mb-5" src="img/java.png" alt="java" width="80" height="80">
-                  </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                      <img class="mt-3 mb-5" src="img/spark logo.png" alt="spark" width="80" height="80">
-                  </div>
-                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                      <img class="mt-3 mb-5" src="img/android.png" alt="android" width="80" height="80">
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 mx-auto">
-                <h5 class=" text-center"> Databases</h5>
-
-                <div class="row  justify-content-center">
-                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                    <img class="mt-3 mb-5" src="img/mongo" alt="mongo" width="80" height="80">
-                </div>
-                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                      <img class="mt-3 mb-5" src="img/firebase.png" alt="firebase" width="80" height="80">
-                  </div>
-                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                      <img class="mt-3 mb-5" src="img/postgresql.png" alt="postgreSQL" width="80" height="80">
-                  </div>
-                  <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                    <img class="mt-3 mb-5" src="img/mysql.png" alt="mySQL" width="80" height="80">
-                </div>
-                </div>
-              </div>
-          </div>
-
-
-          <div class="row text-center text-white justify-content-center">
-            <div class="col-6 mx-auto">
-              <h5 class="col-12 text-center"> Deployment Platforms</h5>
-
-              <div class="row  justify-content-center">
-                
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                  <img class="mt-3 mb-5" src="img/heroku" alt="heroku" width="80" height="80">
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                  <img class="mt-3 mb-5" src="img/vercel" alt="vercel" width="80" height="80">
-              </div>
-              </div>
-            </div>
-            <div class="col-6 mx-auto">
-              <h5 class=" text-center"> Design</h5>
-
-              <div class="row  justify-content-center">
-                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 my-1">
-                  <img class="mt-3 mb-5" src="img/figma.png" alt="figma" width="80" height="80">
-              </div>
-               
-              </div>
-            </div>
-        </div>
-          
-      </div>
-  </section>
-    <!-- ----------------------------------------------END OF SKILLS  SECTION------------------------------------- -->
 
     <!-- --------------------------------------------PROJECTS SECTION---------------------------------------- -->
         
 <!-- projects  -->
-            <section class="resume-section " id="projects">
+            <section class="resume-section " data-aos="fade-up"  data-aos-duration="1000"id="projects">
                 <div class="projects  p-5" id="projects">
                     <h2 class="text-center">Projects</h2><span></span>
                     <div class="container">
                       <!--filter buttons -->
                       <div class="row">
-                        <div class=" col-lg-8 mx-auto d-flex  justify-content-around  sortBtn flex-wrap">
-                          <a href="menu.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
-                          <a href="menu.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="offers">Web</a>
-                          <a href="menu.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="local">Android</a>
-                          <a href="menu.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="international">API</a>
+                        <div class=" col-lg-8 mx-auto d-flex  justify-content-around  sortBtn filter flex-wrap">
+                          <button data-filter="*" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" > all</button>
+                          <button data-filter=".web" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" >Web</button>
+                          <button data-filter=".android" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" >Android</button>
+                          <button data-filter=".api" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" >API</button>
                         </div>
                       </div>
                     </div>
-                    <div class="project-section">
+                    <div class="container">
+                      <div class=" row  project-items">
 
+            
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item web">
+                          <div class="project-content ">
+                              <div class="item project1">
+                              </div>
+                              <div class="footer">
+                                  <h3>Github Search</h3>
+                                  <p>This is an Angular CLI application that allows users to look up Github users' profile and repositories using a username..Built on<b>Angular</b> and <b>Typescript</b>.</p>
+                                  <a class="extra-link" href="https://github.com/DevSheila/GithubAPI">REPOSITORY</a>
+                                  <a class="check" href="https://github-api-beta.vercel.app/profile" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                          </div>
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item web">
+                          <div class="project-content ">
+                              <div class="item project2">
+                              </div>
+                              <div class="footer">
+                                  <h3>Quoty Corner</h3>
+                                  <p>A web app that allows you to add quotes. You can delete the quotes, upvote or downvote them. Built on <b>Angular</b>, <b>Typescript</b> and <b>Netlify</b>.</p>
+                                  <a class="extra-link" href="https://github.com/DevSheila/AngularQuotesApp">REPOSITORY</a>
+                                  <a class="check" href="https://quotycorner.netlify.app/" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item web">
+                          <div class="project-content ">
+                              <div class="item project3">
+                              </div>
+                              <div class="footer">
+                                  <h3>HERO SQUAD</h3>
+                                  <p>An application that allows you to add or recruit heroes.You can also create hero squads and assign heroes to those squads. Built on <b>Java</b>, <b>Spark</b>.</p>
+                                  <a class="extra-link" href="https://github.com/DevSheila/HeroSquad">REPOSITORY</a>
+                                  <a class="check" href="https://devsheila-hero-squad.herokuapp.com/" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item web">
+                          <div class="project-content ">
+                              <div class="item project4">
+                              </div>
+                              <div class="footer">
+                                  <h3>La Pizzierra</h3>
+                                  <p>AWeb application thatallows users to order and cancel pizzas..Built on <b>JavaScript</b> and <b>jQuery</b>.</p>
+                                  <a class="extra-link" href="#">REPOSITORY</a>
+                              
+                                  <a class="check" href="https://devsheila.github.io/wk4_PizzaApplication/" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item android">
+                          <div class="project-content ">
+                              
+                              <div class="footer">
+                                  <h3>Gamers League APP</h3>
+                                  <p>This is an  android mobile app project that crowd-sources video game ratings and review from its users.
+                                      Its aim is to help gamers find out what other people say about a video game and based on that they can decide if they want to try out the game.By extension , gamers league also helps game creators get feedback from their users and with that information they can assess if they are doing a good job. if not , they get to know what they can work on.
+
+                                      Built on <b>Android,</b>Firebase<b>Giant Bomb API</b>.</p>
+                                  <a class="extra-link" href="https://www.figma.com/file/SNLbh7zaJgENhuAXi688Vy/Gamers-League?node-id=0%3A1">FIGMA</a>
+                                  <a class="check" href="https://github.com/DevSheila/GamersLeague" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item android">
+                          <div class="project-content ">
+                            
+                              <div class="footer">
+                                  <h3>TuVybe App</h3>
+                                  <p>An android mobile app that helps bridge the socialization gap that is being experienced world wide due to covid.
+                                      The app helps people find online meetups where people can interact with individuals who have similar interests.
+                                      .Built on <b>Android,</b> Firebase,<b>Event Brite API</b>.</p>
+                                      <a class="extra-link" href="https://www.figma.com/file/ZupU3acVzNUVNVsNdRo1L6/TuVybe">FIGMA</a>
+                                  <a class="check" href="https://github.com/DevSheila/Tuvybe" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item android">
+
+                          <div class="project-content ">
+                              
+                              <div class="footer">
+                                  <h3>MOVERS APP</h3>
+                                  <p>A mobile app that helps a user find a reputable moving company, help organize and manage effectively the time his/her has until moving day, and also helps him/her inventory your entire house hold quickly and easily from a detailed house inventory checklist.
+                                    .Built on <b>JavaScript</b> and <b>jQuery</b>.</p>
+                                
+                                  <a class="check" href="https://github.com/edwinaringo/movers" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item api">
+
+                          <div class="project-content  ">
+                            
+                              <div class="footer">
+                                  <h3>NEWS PORTAL API</h3>
+                                  <p>
+                                      A REST API for querying and retrieving scoped news and information from a fictional organisational news portal . Users can post,get,update and delete news/articles/posts that are available within their user priviledeges level
+                                      Built on
+                                      <b>Java Spark,</b><b>jUnit and </b><b>postgresql</b>.</p>
+                                  <a class="check" href="https://github.com/DevSheila/NewsPortal" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item api">
+
+
+                          <div class="project-content ">
+                              
+                              <div class="footer">
+                                  <h3>SHOPPING API</h3>
+                                  <p>A REST API for querying and retrieving product cost across various enlisted stores.Through the API a user can search in a specific product then compares the prices of the product in a number of common retail supermarket stores then it lets the user know at which store is he/she most likely to spend the least thus enabling them to save a shilling(bob) or more.
+                                      Built on <b>Java Spark,</b><b>jUnit and </b><b>postgresql</b>.</p>.</p>
+                                  <a class="check" href="https://github.com/DevSheila/Shopping" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-4 mx-auto my-3  project-item api">
+
+
+                          <div class="project-content ">
+                              
+                              <div class="footer">
+                                  <h3>MOVERS API</h3>
+                                  <p>
+                                      A REST API for a movers mobile app that helps a user find a reputable moving company, help organize and manage effectively the time his/her has until moving day
+                                      .Built on <b>Java Spark,</b><b>jUnit and </b><b>postgresql</b>.</p>.</p>
+                                  <a class="check" href="https://github.com/DevSheila/MoversAPI" target="_blank" rel="noopener">Check it out</a>
+                              </div>
+                          </div>
+                        </div>
+
+                        
+                        
           
-        
-                        <div class="project-content ">
-                            <div class="item project1">
-                            </div>
-                            <div class="footer">
-                                <h3>Github Search</h3>
-                                <p>This is an Angular CLI application that allows users to look up Github users' profile and repositories using a username..Built on<b>Angular</b> and <b>Typescript</b>.</p>
-                                <a class="extra-link" href="https://github.com/DevSheila/GithubAPI">REPOSITORY</a>
-                                <a class="check" href="https://github-api-beta.vercel.app/profile" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-        
-                        <div class="project-content ">
-                            <div class="item project2">
-                            </div>
-                            <div class="footer">
-                                <h3>Quoty Corner</h3>
-                                <p>A web app that allows you to add quotes. You can delete the quotes, upvote or downvote them. Built on <b>Angular</b>, <b>Typescript</b> and <b>Netlify</b>.</p>
-                                <a class="extra-link" href="https://github.com/DevSheila/AngularQuotesApp">REPOSITORY</a>
-                                <a class="check" href="https://quotycorner.netlify.app/" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-
-                        <div class="project-content ">
-                            <div class="item project3">
-                            </div>
-                            <div class="footer">
-                                <h3>HERO SQUAD</h3>
-                                <p>An application that allows you to add or recruit heroes.You can also create hero squads and assign heroes to those squads. Built on <b>Java</b>, <b>Spark</b>.</p>
-                                <a class="extra-link" href="https://github.com/DevSheila/HeroSquad">REPOSITORY</a>
-                                <a class="check" href="https://devsheila-hero-squad.herokuapp.com/" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-        
-                        <div class="project-content ">
-                            <div class="item project4">
-                            </div>
-                            <div class="footer">
-                                <h3>La Pizzierra</h3>
-                                <p>AWeb application thatallows users to order and cancel pizzas..Built on <b>JavaScript</b> and <b>jQuery</b>.</p>
-                                <a class="extra-link" href="#">REPOSITORY</a>
-                            
-                                <a class="check" href="https://devsheila.github.io/wk4_PizzaApplication/" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content ">
-                            
-                            <div class="footer">
-                                <h3>Gamers League APP</h3>
-                                <p>This is an  android mobile app project that crowd-sources video game ratings and review from its users.
-                                    Its aim is to help gamers find out what other people say about a video game and based on that they can decide if they want to try out the game.By extension , gamers league also helps game creators get feedback from their users and with that information they can assess if they are doing a good job. if not , they get to know what they can work on.
-
-                                    Built on <b>Android,</b>Firebase<b>Giant Bomb API</b>.</p>
-                                <a class="extra-link" href="https://www.figma.com/file/SNLbh7zaJgENhuAXi688Vy/Gamers-League?node-id=0%3A1">FIGMA</a>
-                                <a class="check" href="https://github.com/DevSheila/GamersLeague" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content ">
-                          
-                            <div class="footer">
-                                <h3>TuVybe App</h3>
-                                <p>An android mobile app that helps bridge the socialization gap that is being experienced world wide due to covid.
-                                    The app helps people find online meetups where people can interact with individuals who have similar interests.
-                                    .Built on <b>Android,</b> Firebase,<b>Event Brite API</b>.</p>
-                                    <a class="extra-link" href="https://www.figma.com/file/ZupU3acVzNUVNVsNdRo1L6/TuVybe">FIGMA</a>
-                                <a class="check" href="https://github.com/DevSheila/Tuvybe" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content ">
-                            
-                            <div class="footer">
-                                <h3>MOVERS APP</h3>
-                                <p>A mobile app that helps a user find a reputable moving company, help organize and manage effectively the time his/her has until moving day, and also helps him/her inventory your entire house hold quickly and easily from a detailed house inventory checklist.
-                                   .Built on <b>JavaScript</b> and <b>jQuery</b>.</p>
-                               
-                                <a class="check" href="https://github.com/edwinaringo/movers" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-                        <div class="project-content ">
-                          
-                            <div class="footer">
-                                <h3>NEWS PORTAL API</h3>
-                                <p>
-                                    A REST API for querying and retrieving scoped news and information from a fictional organisational news portal . Users can post,get,update and delete news/articles/posts that are available within their user priviledeges level
-                                    Built on
-                                    <b>Java Spark,</b><b>jUnit and </b><b>postgresql</b>.</p>
-                                <a class="check" href="https://github.com/DevSheila/NewsPortal" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content ">
-                            
-                            <div class="footer">
-                                <h3>SHOPPING API</h3>
-                                <p>A REST API for querying and retrieving product cost across various enlisted stores.Through the API a user can search in a specific product then compares the prices of the product in a number of common retail supermarket stores then it lets the user know at which store is he/she most likely to spend the least thus enabling them to save a shilling(bob) or more.
-                                    Built on <b>Java Spark,</b><b>jUnit and </b><b>postgresql</b>.</p>.</p>
-                                <a class="check" href="https://github.com/DevSheila/Shopping" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content ">
-                            
-                            <div class="footer">
-                                <h3>MOVERS API</h3>
-                                <p>
-                                    A REST API for a movers mobile app that helps a user find a reputable moving company, help organize and manage effectively the time his/her has until moving day
-                                    .Built on <b>Java Spark,</b><b>jUnit and </b><b>postgresql</b>.</p>.</p>
-                                <a class="check" href="https://github.com/DevSheila/MoversAPI" target="_blank" rel="noopener">Check it out</a>
-                            </div>
-                        </div>
-
-                      
-                       
-        
+                      </div>
                     </div>
                 </div>
             </main>
@@ -513,11 +468,39 @@
 
 <!-- --------------------------------------------END OF FOOTER SECTION---------------------------------------- -->
 
+<!-- JS, Popper.js, and jQuery -->
 
-    <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script src="js/hamburger.js"></script>
+
+
+
+  <script>
+  let $projectItems = $('.project-items').isotope({
+    itemSelector:'.project-item'
+  })
+
+  $('.filter-btn').on("click" , function(event){
+    event.preventDefault();
+    var value = $(this).attr('data-filter');
+    console.log(value);
+    console.log($projectItems)
+    $projectItems.isotope({
+      filter : value
+      
+    })
+  })
+
+  </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
  
 </body>
 </html>
